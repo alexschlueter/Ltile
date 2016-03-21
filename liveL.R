@@ -21,7 +21,7 @@ drawTile <- function(sol) {
 }
 
 solveL <- function(n, x, ox, oy) {
-	shape <- data.matrix(read.csv("~/Documents/code/RKurs/L.txt",header=F))
+	shape <- data.matrix(read.csv("~/Documents/code/RKurs/Ltile/L.txt",header=F))
   if (n==1) {
     if (identical(x,c(2,1))) {
       drawTile(addOffs(shape+2,ox,oy))

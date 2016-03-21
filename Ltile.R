@@ -19,8 +19,8 @@ addY <- function(m,b) {
 }
 
 solveL <- function(n, x) {
+  shape <- data.matrix(read.csv("~/Documents/code/RKurs/Ltile/L.txt",header=F))
   if (n==1) {
-    shape <- data.matrix(read.csv("~/Documents/code/RKurs/L.txt",header=F))
     if (identical(x,c(2,1))) {
       return(shape+2)
     } else if (identical(x,c(2,2))) {
